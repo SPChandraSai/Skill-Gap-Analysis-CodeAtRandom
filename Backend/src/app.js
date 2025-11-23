@@ -2,7 +2,6 @@ const express = require("express");
 const cors = require("cors");
 
 // Routers
-const demoRouter = require("./routers/demo.routes");
 const skillGapRouter = require("./routers/skillGap.routes");
 const roadmapRouter = require("./routers/roadmap.routes");
 const hackerNewsRouter = require("./routers/hackerNews.routes");
