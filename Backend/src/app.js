@@ -28,7 +28,6 @@ app.get("/api/ping", (_req, res) => {
 });
 
 // Routes
-app.use("/api/demo", demoRouter);
 app.use("/api/skill-gap", skillGapRouter);
 app.use("/api/roadmap", roadmapRouter);
 app.use("/api/hackernews", hackerNewsRouter);
