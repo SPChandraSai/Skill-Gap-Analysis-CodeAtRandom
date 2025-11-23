@@ -30,7 +30,7 @@ export default function Dashboard() {
             setError("");
 
             // Fetch skill gap
-            const skillGapResponse = await fetch("http://localhost:3000/api/skill-gap", {
+            const skillGapResponse = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/skill-gap`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
@@ -46,7 +46,7 @@ export default function Dashboard() {
             setSkillGap(skillGapData);
 
             // Fetch roadmap
-            const roadmapResponse = await fetch("http://localhost:3000/api/roadmap", {
+            const roadmapResponse = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/roadmap`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ targetRole: analysisData.targetRole }),
@@ -59,7 +59,7 @@ export default function Dashboard() {
             setRoadmap(roadmapData);
 
             // Fetch HackerNews
-            const newsResponse = await fetch("http://localhost:3000/api/hackernews");
+            const newsResponse = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/hackernews`);
             if (newsResponse.ok) {
                 const newsData = await newsResponse.json();
                 setNews(newsData.stories);
