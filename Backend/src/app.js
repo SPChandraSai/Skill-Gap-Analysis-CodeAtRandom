@@ -13,7 +13,7 @@ const app = express();
 // Middleware
 app.use(
     cors({
-        origin: "http://localhost:5173", // adjust if your frontend URL is different
+        origin: ["http://localhost:5173", "https://skill-gap-analysis-code-at-random.vercel.app/"], // adjust if your frontend URL is different
         credentials: true,
     })
 );
