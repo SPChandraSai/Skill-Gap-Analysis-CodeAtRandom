@@ -6,8 +6,8 @@ This project analyzes a user’s current skills, identifies gaps for a target ca
 
 # 🚀 Live Demo
 
-**Frontend Hosted**: Add your Vercel/Netlify link here  
-**Backend Hosted**: Add your Render/Vercel backend link here
+**Frontend Hosted**: [Frontend](https://skill-gap-analysis-code-at-random.vercel.app/)  
+**Backend Hosted**: [Backend](https://skill-gap-analysis-codeatrandom.onrender.com)
 
 ---
 

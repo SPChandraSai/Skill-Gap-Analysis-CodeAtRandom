@@ -52,7 +52,7 @@ export default function Index() {
             );
 
             // Fetch skill gap analysis
-            const skillGapResponse = await fetch("http://localhost:3000/api/skill-gap", {
+            const skillGapResponse = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/skill-gap`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ targetRole, currentSkills: skills }),
@@ -66,7 +66,7 @@ export default function Index() {
             }
 
             // Fetch roadmap
-            const roadmapResponse = await fetch("http://localhost:3000/api/roadmap", {
+            const roadmapResponse = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/roadmap`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ targetRole }),
