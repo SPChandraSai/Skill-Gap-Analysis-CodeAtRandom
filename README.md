@@ -220,13 +220,13 @@ frontend/
 **📸 Screenshots**
 
 Landing Page:
-![Landing Page](Screenshorts/LandingPage.png)
+![Landing Page](Screenshots/LandingPage.png)
 
 Dashboard – Skill Gap & Roadmap
-![Dash Board](Screenshorts/DashBoard.png)
+![Dash Board](Screenshots/DashBoard.png)
 
 Dashboard – Tech News
-![Tech News](Screenshorts/TechNews.png)
+![Tech News](Screenshots/TechNews.png)
 
 ---
 
